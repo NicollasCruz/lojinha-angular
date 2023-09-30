@@ -1,18 +1,18 @@
 <div class="content">
     <div class="container">
         <h2 class="title">Bem-Vindo</h2>
-        <form class="login-form">
+        <form class="login-form" (ngSubmit)="login()" >
             <div class="input-container">
-                <input required type="text" />
+                <input type="text" formControlName="usuario"/>
                 <label>Usuário</label>
               </div>
               
               <div class="input-container">
-                <input required type="text" />
+                <input type="text" formControlName="senha"/>
                 <label>Senha</label>
               </div>
               <div class="input-container">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit"/>
               </div>
         </form>
         <hr>
